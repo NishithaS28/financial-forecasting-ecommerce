@@ -1,5 +1,6 @@
 import pandas as pd
 from fbprophet import Prophet
+import matplotlib.pyplot as plt  # Add this line to import matplotlib
 
 # Sample data (use your actual sales data here)
 df = pd.DataFrame({
@@ -19,4 +20,10 @@ forecast = model.predict(future)
 print(forecast[['ds', 'yhat', 'yhat_lower', 'yhat_upper']])
 
 # Plot the forecast
-model.plot(forecast)
+fig = model.plot(forecast)
+
+# Save the plot as an image file
+fig.savefig('forecast_visualization.png')  # Add this line to save the plot
+
+# Display the plot
+plt.show()  # Optionally display the plot if you're running it locally
