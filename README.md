@@ -18,5 +18,5 @@ The goal of this project is to develop a forecasting model that improves the acc
 ## Results
 - 20% improvement in forecasting accuracy
 - Visualizations built in Tableau to show predicted vs. actual revenue
+![Revenue Forecast Visualization](c381046cc6abf57916c750a85e16815c-1.jpg)
 
- 
